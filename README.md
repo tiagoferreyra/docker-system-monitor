@@ -45,6 +45,4 @@ Este proyecto está contenerizado, por lo que funciona en cualquier máquina con
 
 ## 📸 Capturas de Pantalla
 
-*(Aquí puedes poner una foto de tu Grafana. Saca una captura y pégala aquí más tarde)*.
-
 ![alt text](image.png)
