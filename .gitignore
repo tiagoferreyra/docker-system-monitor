@@ -1,0 +1,17 @@
+# Archivos de entorno virtual (No subir, pesan mucho y son locales)
+.venv/
+venv/
+env/
+
+# Archivos compilados de Python (Basura)
+__pycache__/
+*.pyc
+
+# Datos de la base de datos (No subir datos reales)
+pgdata/
+
+# Archivos de sistema
+.DS_Store
+
+.env
+
