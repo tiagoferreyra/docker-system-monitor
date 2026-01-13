@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: mi_password_secreto
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # Esto hace que los datos no se borren al apagar
+
+  monitor:
+    build: .
+    depends_on:
+      - db  # Espera a que la DB inicie (aunque no garantiza que esté lista, ayuda)
+    environment:
+      DB_HOST: db  
+      DB_PASS: mi_password_secreto
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"  
+    depends_on:
+      - db
+
+volumes:
+  pgdata:  
