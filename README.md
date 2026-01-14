@@ -30,8 +30,8 @@ Este proyecto está contenerizado, por lo que funciona en cualquier máquina con
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/TU_USUARIO/nombre-del-repo.git](https://github.com/TU_USUARIO/nombre-del-repo.git)
-    cd nombre-del-repo
+    git clone https://github.com/tiagoferreyra/docker-system-monitor.git
+    cd docker-system-monitor
     ```
 
 2.  **Iniciar los servicios:**
