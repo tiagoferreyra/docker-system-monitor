@@ -45,4 +45,4 @@ Este proyecto está contenerizado, por lo que funciona en cualquier máquina con
 
 ## 📸 Capturas de Pantalla
 
-![alt text](image.png)
+![alt text](image-1.png)
