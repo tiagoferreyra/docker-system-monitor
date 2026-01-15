@@ -43,6 +43,6 @@ Este proyecto está contenerizado, por lo que funciona en cualquier máquina con
     * Entra a `http://localhost:3000` en tu navegador.
     * Credenciales por defecto: `admin` / `admin`.
 
-## 📸 Capturas de Pantalla
+📊 Dashboard
 
-![alt text](image-1.png)
+![Monitor en tiempo real](dashboard.png)
