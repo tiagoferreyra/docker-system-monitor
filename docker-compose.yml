@@ -21,6 +21,8 @@ services:
 
       TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
       TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+    volumes:
+      - /:/host_disk:ro
 
   grafana:
     image: grafana/grafana
@@ -28,6 +30,9 @@ services:
       - "3000:3000"  
     depends_on:
       - db
+    volumes:  
+      - grafana_data:/var/lib/grafana
 
 volumes:
-  pgdata:  
+  pgdata:
+  grafana_data:  
